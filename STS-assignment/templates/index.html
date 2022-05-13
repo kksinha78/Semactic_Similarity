@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///C:/My%20data/STS-assignment/templates/index.html -->
+<html><!--From https://codepen.io/frytyler/pen/EGdtg--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>ML API</title>
+  <link href="./ML API_files/css" rel="stylesheet" type="text/css">
+<link href="./ML API_files/css(1)" rel="stylesheet" type="text/css">
+<link href="./ML API_files/css(2)" rel="stylesheet" type="text/css">
+<link href="./ML API_files/css(3)" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="file:///C:/My%20data/STS-assignment/templates/%7B%7B%20url_for(&#39;static&#39;,%20filename=&#39;css/style.css&#39;)%20%7D%7D">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Semantic Similararity</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="file:///C:/My%20data/STS-assignment/templates/%7B%7B%20url_for(&#39;predict&#39;)%7D%7D" method="post">
+    	<input type="text" name="text1" placeholder="text1" required="required">
+        <input type="text" name="text2" placeholder="text2" required="required">
+		
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ Similarity Score }}
+
+ </div>
+
+
+
+
+</body></html>
